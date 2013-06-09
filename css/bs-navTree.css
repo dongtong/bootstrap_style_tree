@@ -1,0 +1,262 @@
+/*  
+* @description:  bootstrap tree style
+* @author: Dong Jinhu  
+* @update: Dong Jinhu  (2013-06-6 18:32)  
+*/  
+
+.navigation i {
+    float: left;
+}
+
+.navigation ul {
+    margin: 0;
+}
+
+.navigation ul.leaf-folder{
+    margin-left: 0px;
+}
+
+.navigation li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.navigation > ul > li:first-child {
+    border-width: 1px 1px 0 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.navigation > ul > li:last-child {
+    border-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.navigation > ul > li:last-child > ul > li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.navigation > ul > li > span {
+    font-weight: bold;
+}
+
+.navigation .icon-folder-opened{
+  background: url("../images/folder-open.png");
+  float: left;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.navigation .icon-folder-closed{
+  background: url("../images/folder-closed.png");
+  float: left;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.navigation .icon-leaf, .navigation .icon-folder-opened, .navigation .icon-folder-closed{
+    margin-right: 5px;
+}
+
+.navigation li {
+    padding-left: 27px;
+}
+.navigation li.first-leaf{
+    padding-left: 0;
+}
+
+.navigation > ul > li > ul > li:first-child {
+    border-width: 1px 0 0 0;
+}
+
+.navigation > ul > li > ul > li:last-child {
+    border-width: 1px 0 0 0;
+}
+
+.navigation {
+  float: left;
+  width: 720px;
+  overflow: auto;
+  margin-bottom: 18px;
+  height: 600px;
+  margin-right: 15px;
+  padding-right: 5px;
+  margin-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px #cccccc;
+  -moz-box-shadow: 0 1px 3px #cccccc;
+  box-shadow: 0 1px 3px #cccccc;
+  -webkit-box-shadow: 0 1px 3px #cccccc;
+  -moz-box-shadow: 0 1px 3px #cccccc;
+  box-shadow: 0 1px 3px #cccccc;
+  background-color: #FFFFFF;
+  -webkit-scrollbar-corner: 5px;
+  scrollbar-track-color: #F2F2F2;
+}
+
+.navigation ul.nav {
+  list-style: none;
+  margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.navigation span {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    white-space: nowrap;
+    background-color: #fff;
+}
+
+.navigation .icon-branch{
+    background: url(../images/elbow.gif);
+    float: left;
+    vertical-align: middle;
+}
+.navigation .icon-arrow-close{
+    background-image: url("../images/arrows.gif");
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 14px;
+    margin-top: -2px;
+}
+
+.navigation .icon-arrow-close-hover{
+    background-image: url("../images/arrows.gif");
+    background-position: -32px 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 14px;
+    margin-top: -2px;
+}
+
+.navigation .icon-arrow-open-hover{
+    background-image: url("../images/arrows.gif");
+    background-position: -48px 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 14px;
+    margin-top: -2px;
+}
+
+.navigation .icon-arrow-open{
+    background-image: url("../images/arrows.gif");
+    background-position: -16px 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+    width: 14px;
+    margin-top: -2px;
+}
+
+.navigation ul.nav ul li a {
+  display: block;
+  padding: 5px 10px 5px 20px;
+  color: #444444;
+}
+
+.navigation ul.nav ul li a{
+    padding: 0;
+}
+.navigation ul.nav ul li a:hover{
+    text-decoration: none;
+}
+.navigation span{
+  width: 120px;
+}
+.navigation span.active-leaf{
+    background-color: #E9F3F8;
+}
+
+/* *
+ * TODO: width by dongjinhu 2013-06-06 18:32 
+ *  refactor by less
+ */
+.navigation .icon-root-server{
+    background: url("../images/server-cluster.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+
+.navigation .icon-server{
+    background: url("../images/server.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+
+.navigation .icon-client{
+    background: url("../images/media-client.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-html{
+    background: url("../images/html-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-html{
+    background: url("../images/html-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-document{
+    background: url("../images/document-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-flash{
+    background: url("../images/flash-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-image{
+    background: url("../images/image-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-movie{
+    background: url("../images/movie-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 14px; 
+    height: 14px;
+}
+.navigation .icon-leaf-node{
+    background: url("../images/leaf-node.png");
+    float: left;
+    vertical-align: middle;
+    width: 15px;
+}
